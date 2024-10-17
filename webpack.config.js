@@ -17,7 +17,7 @@ module.exports = {
       modules: __dirname + "/node_modules",
     },
   },
-  plugin: [new ExtractTextPlugin("app.css")],
+  plugins: [new ExtractTextPlugin("app.css")],
   module: {
     loaders: [
       {
