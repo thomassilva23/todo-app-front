@@ -1,15 +1,15 @@
 import React from "react";
 
-export default (props) => (
+const Menu = (props) => (
   <nav className="navbar navbar-inverse bg-inverse">
     <div className="container">
       <div className="navbar-header">
-        <a href="#" className="navbar-brand">
-          <i className="fa fa-calendar-check-o"></i>TodoApp
+        <a className="navbar-brand" href="#/todos">
+          <i className="fa fa-calendar-check-o"></i> TodoApp
         </a>
       </div>
 
-      <div id="navbar" className="navbar-collapse">
+      <div id="navbar" className="navbar-collapse collapse">
         <ul className="nav navbar-nav">
           <li>
             <a href="#/todos">Tarefas</a>
@@ -22,3 +22,5 @@ export default (props) => (
     </div>
   </nav>
 );
+
+export default Menu;

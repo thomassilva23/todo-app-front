@@ -1,13 +1,14 @@
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../../node_modules/font-awesome/css/font-awesome.min.css";
-
 import React from "react";
-import Menu from "../template/menu";
-import Routes from "./routes";
+import Menu from "../template/Menu";
+import Routes from "./Routes";
 
-export default (props) => (
+require("bootstrap/dist/css/bootstrap.min.css");
+require("font-awesome/css/font-awesome.min.css");
+
+const App = (props) => (
   <div className="container">
     <Menu />
     <Routes />
   </div>
 );
+export default App;
